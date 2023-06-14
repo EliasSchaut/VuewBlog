@@ -1,4 +1,11 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true }
+  // https://github.com/nuxt-themes/alpine
+  extends: '@nuxt-themes/alpine',
+
+  modules: [
+    // https://github.com/nuxt-modules/plausible
+    '@nuxtjs/plausible',
+    // https://github.com/nuxt/devtools
+    '@nuxt/devtools'
+  ],
 })
